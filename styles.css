@@ -1,70 +1,92 @@
+
+
+body {
+  background-color: #f0f0f0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  background-image: url('./img/background.PNG');
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área del elemento */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  text-align: left; /* Align text to the left */
+  padding-left: 50px;
+}
+
+.highlight {
+  color: firebrick;
+  font-weight: bold;
+}
+
+.header-content {
+  display: inline-block;
+  width: calc(100% - 300px); /* Adjust to the width of the image */
+  vertical-align: top;
+}
+
 .circular-img {
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
-    height: 150px;
-    border-radius: 50%; /* Esto hace que la imagen sea circular */
-    overflow: hidden; /* Esconde cualquier parte de la imagen que se salga del borde */
-    
+  display: inline-block;
+  width: 200px; /* Adjust to the width of the image */
+  height: 200px; /* Adjust to the height of the image */
+  vertical-align: top;
+  padding-top: 50px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: aqua
 }
 
 .circular-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Esto asegura que la imagen cubra todo el área del círculo */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; 
 }
 
-body {
-    background-color: #f0f0f0;
-  }
+ul {
+  font-size: 18px;
+  display: inline-block ;
+}
 
-  /* 2. Set the background color and text color of the header. HEX format. */
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
+ol {
+  font-size: 18px;
+  display: inline-block ;
+}
 
-  /* 3. Add a bottom border to the links within the nav */
-  /* 4. Remove the underline from the links within the nav */
-  ul {
-    font-size: 18px;
-    list-style-type: none;
-  }
+ul+ul {
+  list-style: none;
+}
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 2px solid #ccc;
-  }
+ol+ol {
+  list-style: none;
+}
 
-  /* 5. Add background color and border to each section */
-  section {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    margin: 20px;
-    padding: 20px;
-  }
+section {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
 
-  /* 6. Increase the font size of the h2 titles */
-  h2 {
-    font-size: 1.5em;
-  }
+h2 {
+  font-size: 1.5em;
+}
 
-  /* 7. Make the text within span red and bold */
-  span {
-    color: red;
-    font-weight: bold;
-  }
+.test span {
+  color: purple;
+}
 
-  /* 8. The last span "reach out" should be purple */
-  .test span {
-    color: purple;
-  }
-
-  /* 9. Set the background color and text color of the footer */
-  /* 10. Center-align the text of the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-  }
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;    
+}
